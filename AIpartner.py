@@ -107,7 +107,7 @@ for messages in st.session_state.messages:
 
 #创建客户端对象
 client = OpenAI(
-    api_key=st.secrets('DEEPSEEK_API_KEY'),
+    api_key=st.secrets['DEEPSEEK_API_KEY'],
     base_url="https://api.deepseek.com/")
 
 #左侧侧边栏:with是streamlit中的上下文管理器
